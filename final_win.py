@@ -1,5 +1,6 @@
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import*
+from PyQt5.QtGui *
 from instr import*
 
 class FinalWin(QWidget):
@@ -11,7 +12,7 @@ class FinalWin(QWidget):
         self.exp()
 
     def results(self):
-        self.exp.age < 7:
+        if self.exp.age < 7:
             self.index = 0
             return "нет данных для такого возраста"
         self.index = (4 * (int(self.exp.t1) + int(self.exp.t2) + inr(self.exp.t3)) - 200) / 10
@@ -49,14 +50,14 @@ class FinalWin(QWidget):
             else:
                 return txt_res5
 
-        def initUI(self):
-            self.work_text = QLabel(txt_workheart + self.results())
-            self.index_text - Qlabel(txt_index + str(self.index))
+    def initUI(self):
+        self.work_text = QLabel(txt_workheart + self.results())
+        self.index_text - Qlabel(txt_index + str(self.index))
             
-            self.layout_line = QVBoxLayout()
-            self.layout_line.addWidget(self.index_text, alignment = Qt.AlignCenter)
-            self.layout_line.addWidget(self.work_text, alignment = Qt.AlignCenter)
-            self.setLayout(self.layout_line)
+        self.layout_line = QVBoxLayout()
+        self.layout_line.addWidget(self.index_text, alignment = Qt.AlignCenter)
+        self.layout_line.addWidget(self.work_text, alignment = Qt.AlignCenter)
+        self.setLayout(self.layout_line)
 
     def set_appear():
         self.setWindowTitle(txt_title)
